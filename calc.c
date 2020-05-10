@@ -15,15 +15,15 @@ int main(){
 			fscanf(fp, "%d %c %d",&operand1, &operator, &operand2);
 			switch(operator) {
 				case '+':
-				result = add(operand1, operator);
+				result = add(operand1, operand2);
 				break;
 				case '-':
-				result = minus(operand1, operator);
+				result = minus(operand1, operand2);
 				break;
 				case '*':
-				result = mul(operand1, operator);
+				result = mul(operand1, operand2);
 				case '/':
-				result = div(operand1, operator);
+				result = div(operand1, operand2);
 				break;
 			}		
 			printf("%d %c %d = %d\n",
